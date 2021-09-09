@@ -5,7 +5,7 @@ body.theme1 {
   $screen-bg: hsl(224, 36%, 15%);
   // Keys
   $primary-key-bg: hsl(225, 21%, 49%);
-  $primary-key-shadow: hsl(225, 21%, 49%);
+  $primary-key-shadow: hsl(224, 28%, 35%);
 
   $secondary-key-bg: hsl(6, 63%, 50%);
   $secondary-key-shadow: hsl(6, 70%, 34%);
@@ -13,7 +13,7 @@ body.theme1 {
   $ternary-key-bg: hsl(30, 25%, 89%);
   $ternary-key-shadow: hsl(28, 16%, 65%);
   // Text
-  $text-1: hsl(28, 16%, 65%);
+  $text-1: hsl(221, 14%, 31%);
   $text-2: hsl(0, 0, 100%);
 
   background-color: $main-bg;
@@ -26,5 +26,23 @@ body.theme1 {
 
   .buttons {
     background-color: $toggle-bg;
+  }
+
+  .btn {
+    background: $ternary-key-bg;
+    box-shadow: 0 4px $ternary-key-shadow;
+    color: $text-1;
+  }
+
+  #del, #reset {
+    background: $primary-key-bg;
+    box-shadow: 0 4px $primary-key-shadow;
+    color: $text-2;
+  }
+
+  #equals {
+    background: $secondary-key-bg;
+    box-shadow: 0 4px $secondary-key-shadow;
+    color: $text-2;
   }
 }
