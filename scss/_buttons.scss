@@ -1,11 +1,21 @@
 .btn {
-  font-size: inherit;
-  padding: .3em 1em;
+  // padding: 0.3em 0.75em;
   border: none;
-  border-radius: .30em;
+  border-radius: 0.3em;
+
+  box-sizing: border-box;
+  height: calc(100% + .55rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &#del, &#reset {
+    font-size: 1.25rem;
+  }
 
   &:hover {
     cursor: pointer;
   }
 }
-

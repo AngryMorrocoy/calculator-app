@@ -14,7 +14,6 @@ body {
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
 
-  box-sizing: content-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,16 +21,19 @@ body {
   min-height: 100vh;
 }
 
-input, button {
+input,
+button {
   font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .calculator {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
-  width: 40%;
-  transform: scale(88%);
+  max-width: 30rem;
+  padding: 1rem;
 }
 
 .attribution {

@@ -34,7 +34,8 @@ body.theme1 {
     color: $text-1;
   }
 
-  #del, #reset {
+  #del,
+  #reset {
     background: $primary-key-bg;
     box-shadow: 0 4px $primary-key-shadow;
     color: $text-2;

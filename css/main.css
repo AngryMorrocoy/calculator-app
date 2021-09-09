@@ -1,8 +1,14 @@
 .btn {
-  font-size: inherit;
-  padding: 0.3em 1em;
   border: none;
   border-radius: 0.3em;
+  box-sizing: border-box;
+  height: calc(100% + .55rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn#del, .btn#reset {
+  font-size: 1.25rem;
 }
 .btn:hover {
   cursor: pointer;
@@ -24,7 +30,8 @@ body.theme1 .btn {
   box-shadow: 0 4px #b4a597;
   color: #444b5a;
 }
-body.theme1 #del, body.theme1 #reset {
+body.theme1 #del,
+body.theme1 #reset {
   background: #637097;
   box-shadow: 0 4px #404e72;
   color: white;
@@ -39,7 +46,7 @@ body.theme1 #equals {
   border-radius: 0.3em;
   padding: 1em;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1em 0.7em;
   grid-template-columns: repeat(4, 1fr);
 }
 .buttons #reset {
@@ -71,12 +78,12 @@ body.theme1 #equals {
 }
 
 .display {
-  font-size: inherit;
-  font-family: inherit;
-  padding: 2rem;
+  width: 100%;
+  padding: 1.25rem;
   border-radius: 0.3em;
   border: none;
   text-align: right;
+  box-sizing: border-box;
 }
 
 * {
@@ -88,7 +95,6 @@ body {
   font-size: 32px;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
-  box-sizing: content-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,16 +102,19 @@ body {
   min-height: 100vh;
 }
 
-input, button {
+input,
+button {
   font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .calculator {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
-  width: 40%;
-  transform: scale(88%);
+  max-width: 30rem;
+  padding: 1rem;
 }
 
 .attribution {

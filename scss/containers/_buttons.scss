@@ -1,13 +1,16 @@
+@use "sass:math";
+
 .buttons {
 
-  $separation: 1em;
+  $vertical-separation: 1em;
+  $horizontal-separation: .70em;
 
   border-radius: .3em;
 
-  padding: $separation;
+  padding: $vertical-separation;
 
   display: grid;
-  grid-gap: $separation;
+  grid-gap: $vertical-separation $horizontal-separation;
   grid-template-columns: repeat(4, 1fr);
 
   #reset {
