@@ -6,6 +6,12 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -13,14 +19,55 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Calculator app</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600&display=swap" rel="stylesheet">
-
   </head>
-  <body>
+  <body class="theme1">
+
+    <div class="calculator">
+      <div class="header">
+        <p>calc</p>
+        <div class="theme-selector">
+          <p>theme</p>
+          <div class="slider">
+            <span>1 2 3</span>
+            <div class="selected-theme">
+              <span class="theme-indicator"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input type="text" id="display">
+
+      <div class="buttons">
+        <div class="section-1">
+          <button class="btn" id="7">7</button>
+          <button class="btn" id="9">8</button>
+          <button class="btn" id="9">9</button>
+          <button class="btn" id="del">DEL</button>
+
+          <button class="btn" id="4">4</button>
+          <button class="btn" id="5">5</button>
+          <button class="btn" id="6">6</button>
+          <button class="btn" id="plus">+</button>
+
+          <button class="btn" id="1">1</button>
+          <button class="btn" id="2">2</button>
+          <button class="btn" id="3">3</button>
+          <button class="btn" id="less">-</button>
+
+          <button class="btn" id=".">.</button>
+          <button class="btn" id="0">0</button>
+          <button class="btn" id="/">/</button>
+          <button class="btn" id="times">x</button>
+        </div>
+        <div class="section-2">
+          <button class="btn" id="reset">RESET</button>
+          <button class="btn" id="equals">=</button>
+        </div>
+      </div>
+    </div>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
