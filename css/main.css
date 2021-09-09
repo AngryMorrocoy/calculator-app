@@ -1,17 +1,101 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   background: $theme1-main-bg;
- *   |               ^^^^^^^^^^^^^^^
- *   '
- *   scss/main.scss 2:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    background: $theme1-main-bg;\a   \2502                ^^^^^^^^^^^^^^^\a   \2575 \a   scss/main.scss 2:15  root stylesheet";
+.btn {
+  font-size: inherit;
+  padding: 0.3em 1em;
+  border: none;
+  border-radius: 0.3em;
 }
+.btn:hover {
+  cursor: pointer;
+}
+
+body.theme1 {
+  background-color: #3a4764;
+  color: white;
+}
+body.theme1 .display {
+  background-color: #182034;
+  color: white;
+}
+body.theme1 .buttons {
+  background-color: #232c43;
+}
+
+.buttons {
+  border-radius: 0.3em;
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons #reset {
+  grid-column: 1/span 2;
+}
+.buttons #equals {
+  grid-column: 3/span 2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header > p {
+  font-size: 1rem;
+}
+.header .theme-selector {
+  display: flex;
+  align-items: flex-end;
+}
+.header .theme-selector p {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin-right: 1.5rem;
+}
+.header .theme-selector .slider > span {
+  font-size: 0.6rem;
+}
+
+.display {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 2rem;
+  border-radius: 0.3em;
+  border: none;
+  text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 32px;
+  font-family: "Spartan", sans-serif;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  width: 40%;
+  transform: scale(88%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */

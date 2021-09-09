@@ -1,0 +1,29 @@
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &>p {
+    font-size: 1rem;
+  }
+
+  .theme-selector {
+
+    $small-font-size: .6rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    p {
+      text-transform: uppercase;
+      font-size: $small-font-size;
+      margin-right: 1.5rem;
+    }
+
+    .slider > span {
+      font-size: $small-font-size;
+    }
+
+  }
+}

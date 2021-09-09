@@ -1,0 +1,22 @@
+.buttons {
+
+  $separation: 1em;
+
+  border-radius: .3em;
+
+  padding: $separation;
+
+  display: grid;
+  grid-gap: $separation;
+  grid-template-columns: repeat(4, 1fr);
+
+  #reset {
+    grid-column: 1 / span 2;
+  }
+
+  #equals {
+    grid-column: 3 / span 2;
+  }
+
+}
+

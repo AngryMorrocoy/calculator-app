@@ -1,0 +1,38 @@
+@use "buttons";
+@use "themes/_theme-loader";
+@use "containers/buttons" as container-buttons;
+@use "containers/header" as container-header;
+@use "containers/display" as container-display;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 32px;
+  font-family: 'Spartan', sans-serif;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  width: 40%;
+  transform: scale(88%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

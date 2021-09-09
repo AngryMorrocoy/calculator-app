@@ -1,0 +1,11 @@
+.btn {
+  font-size: inherit;
+  padding: .3em 1em;
+  border: none;
+  border-radius: .30em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
