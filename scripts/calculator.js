@@ -82,4 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const regex = /[\d-+/x.]/;
     if (!regex.test(evt.data)) deleteFromDisplay();
   });
+
+  display.addEventListener('keypress', (evt) => {
+    if (evt.keyCode === 13) {
+      calculate();
+    }
+  })
 });
