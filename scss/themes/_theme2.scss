@@ -1,16 +1,57 @@
-// Backgrounds
-$theme2-main-bg: hsl(0, 0%, 90%);
-$theme2-toggle-bg: hsl(0, 5%, 81%);
-$theme2-screen-bg: hsl(0, 0%, 93%);
-// Keys
-$theme2-primary-key-bg: hsl(185, 42%, 37%);
-$theme2-primary-key-shadow: hsl(185, 58%, 25%);
+body.theme2 {
+  // Backgrounds
+  $main-bg: hsl(0, 0%, 90%);
+  $toggle-bg: hsl(0, 5%, 81%);
+  $screen-bg: hsl(0, 0%, 93%);
+  // Keys
+  $primary-key-bg: hsl(185, 42%, 37%);
+  $primary-key-shadow: hsl(185, 58%, 25%);
 
-$theme2-secondary-key-bg: hsl(25, 98%, 40%);
-$theme2-secondary-key-shadow: hsl(25, 99%, 27%);
+  $secondary-key-bg: hsl(25, 98%, 40%);
+  $secondary-key-shadow: hsl(25, 99%, 27%);
 
-$theme2-ternary-key-bg: hsl(45, 7%, 89%);
-$theme2-ternary-key-shadow: hsl(35, 11%, 61%);
-// Text
-$theme2-text-1: hsl(60, 10%, 19%);
-$theme2-text-2: hsl(0, 0, 100%);
+  $ternary-key-bg: hsl(45, 7%, 89%);
+  $ternary-key-shadow: hsl(35, 11%, 61%);
+  // Text
+  $text-1: hsl(60, 10%, 19%);
+  $text-2: hsl(0, 0, 100%);
+
+  background-color: $main-bg;
+  color: $text-1;
+
+  .display {
+    background-color: $screen-bg;
+    color: $text-1;
+  }
+
+  .buttons {
+    background-color: $toggle-bg;
+  }
+
+  .btn {
+    background: $ternary-key-bg;
+    box-shadow: 0 4px $ternary-key-shadow;
+    color: $text-1;
+  }
+
+  #del,
+  #reset {
+    background: $primary-key-bg;
+    box-shadow: 0 4px $primary-key-shadow;
+    color: $text-2;
+  }
+
+  #equals {
+    background: $secondary-key-bg;
+    box-shadow: 0 4px $secondary-key-shadow;
+    color: $text-2;
+  }
+
+  .theme-selector__buttons {
+    background-color: $toggle-bg !important;
+
+    input:checked + .checkmark {
+      background-color: $secondary-key-bg !important;
+    }
+  }
+}

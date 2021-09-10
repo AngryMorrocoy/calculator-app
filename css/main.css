@@ -45,6 +45,40 @@ body.theme1 .theme-selector__buttons input:checked + .checkmark {
   background-color: #d03f2f !important;
 }
 
+body.theme2 {
+  background-color: #e6e6e6;
+  color: #35352c;
+}
+body.theme2 .display {
+  background-color: #ededed;
+  color: #35352c;
+}
+body.theme2 .buttons {
+  background-color: #d1cccc;
+}
+body.theme2 .btn {
+  background: #e5e4e1;
+  box-shadow: 0 4px #a69d91;
+  color: #35352c;
+}
+body.theme2 #del,
+body.theme2 #reset {
+  background: #377f86;
+  box-shadow: 0 4px #1b5f65;
+  color: white;
+}
+body.theme2 #equals {
+  background: #ca5502;
+  box-shadow: 0 4px #893901;
+  color: white;
+}
+body.theme2 .theme-selector__buttons {
+  background-color: #d1cccc !important;
+}
+body.theme2 .theme-selector__buttons input:checked + .checkmark {
+  background-color: #ca5502 !important;
+}
+
 .buttons {
   border-radius: 0.3em;
   padding: 1em;
