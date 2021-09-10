@@ -2,10 +2,7 @@
   border: none;
   border-radius: 0.3em;
   box-sizing: border-box;
-  height: calc(100% + .55rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: calc(100% + 0.75rem);
 }
 .btn#del, .btn#reset {
   font-size: 1.25rem;

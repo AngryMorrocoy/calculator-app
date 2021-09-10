@@ -1,11 +1,8 @@
-@use "sass:math";
-
 .buttons {
-
   $vertical-separation: 1em;
-  $horizontal-separation: .70em;
+  $horizontal-separation: 0.7em;
 
-  border-radius: .3em;
+  border-radius: 0.3em;
 
   padding: $vertical-separation;
 
@@ -20,6 +17,4 @@
   #equals {
     grid-column: 3 / span 2;
   }
-
 }
-

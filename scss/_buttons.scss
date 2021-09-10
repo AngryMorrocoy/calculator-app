@@ -4,14 +4,10 @@
   border-radius: 0.3em;
 
   box-sizing: border-box;
-  height: calc(100% + .55rem);
+  height: calc(100% + 0.75rem);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  &#del, &#reset {
+  &#del,
+  &#reset {
     font-size: 1.25rem;
   }
 
