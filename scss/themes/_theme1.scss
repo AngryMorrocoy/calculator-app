@@ -46,4 +46,12 @@ body.theme1 {
     box-shadow: 0 4px $secondary-key-shadow;
     color: $text-2;
   }
+
+  .theme-selector__buttons {
+    background-color: $toggle-bg !important;
+
+    input:checked + .checkmark {
+      background-color: $secondary-key-bg !important;
+    }
+  }
 }

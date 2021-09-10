@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="scripts/calculator.js"></script>
+    <script src="scripts/themeChanger.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,9 +31,22 @@
         <div class="theme-selector">
           <p>theme</p>
           <div class="slider">
-            <span>1 2 3</span>
-            <div class="selected-theme">
-              <span class="theme-indicator"></span>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <div class="theme-selector__buttons">
+              <div class="radio-container">
+                <input checked id="theme1" type="radio" name="theme">
+                <span class="checkmark"></span>
+              </div>
+              <div class="radio-container">
+                <input id="theme2" type="radio" name="theme">
+                <span class="checkmark"></span>
+              </div>
+              <div class="radio-container">
+                <input id="theme3" type="radio" name="theme">
+                <span class="checkmark"></span>
+              </div>
             </div>
           </div>
         </div>

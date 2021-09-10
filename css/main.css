@@ -38,6 +38,12 @@ body.theme1 #equals {
   box-shadow: 0 4px #93261a;
   color: white;
 }
+body.theme1 .theme-selector__buttons {
+  background-color: #232c43 !important;
+}
+body.theme1 .theme-selector__buttons input:checked + .checkmark {
+  background-color: #d03f2f !important;
+}
 
 .buttons {
   border-radius: 0.3em;
@@ -62,16 +68,50 @@ body.theme1 #equals {
   font-size: 1rem;
 }
 .header .theme-selector {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 .header .theme-selector p {
   text-transform: uppercase;
   font-size: 0.6rem;
   margin-right: 1.5rem;
+  align-self: end;
 }
-.header .theme-selector .slider > span {
-  font-size: 0.6rem;
+.header .theme-selector .slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+  align-items: end;
+}
+.header .theme-selector .slider p {
+  margin: auto;
+}
+.header .theme-selector .slider .theme-selector__buttons {
+  grid-column: 1/span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  border-radius: 0.75rem;
+}
+.header .theme-selector .slider .theme-selector__buttons .radio-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  position: relative;
+}
+.header .theme-selector .slider .theme-selector__buttons .radio-container input {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.header .theme-selector .slider .theme-selector__buttons .radio-container .checkmark {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+  border-radius: 50%;
 }
 
 .display {

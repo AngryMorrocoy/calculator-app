@@ -1,29 +1,69 @@
 .header {
-
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
-  &>p {
+  & > p {
     font-size: 1rem;
   }
 
   .theme-selector {
+    $small-font-size: 0.6rem;
 
-    $small-font-size: .6rem;
-
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: auto auto;
 
     p {
       text-transform: uppercase;
       font-size: $small-font-size;
       margin-right: 1.5rem;
+      align-self: end;
     }
 
-    .slider > span {
-      font-size: $small-font-size;
-    }
+    .slider {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 
+      justify-items: end;
+      align-items: end;
+
+      p {
+        margin: auto;
+      }
+
+      .theme-selector__buttons {
+        grid-column: 1 / span 3;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: end;
+
+        border-radius: 0.75rem;
+
+        .radio-container {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          position: relative;
+
+          input {
+            opacity: 0;
+            cursor: pointer;
+            z-index: 2;
+          }
+
+          .checkmark {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 20%;
+            left: 20%;
+            right: 20%;
+            bottom: 20%;
+            border-radius: 50%;
+          }
+
+        }
+      }
+    }
   }
 }
