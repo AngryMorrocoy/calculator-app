@@ -1,10 +1,10 @@
 const reverseString = (str) => {
-  let result = "";
+  let result = '';
   for (let i = 0; i < str.length; i++) {
     result = str[i] + result;
   }
   return result;
-}
+};
 
 const numberPrettifier = (number) => {
   let [preDot, postDot] = number.toString().split('.');
@@ -14,7 +14,7 @@ const numberPrettifier = (number) => {
 
   let result = '';
 
-  for (let i = 0; i < preDot.length; i+=3) {
+  for (let i = 0; i < preDot.length; i += 3) {
     result += reversedPreDot.slice(i, i + 3);
     result += i + 3 < preDot.length ? ',' : '';
   }
@@ -35,16 +35,17 @@ const clearDisplay = () => {
   display.value = '';
 };
 
-const deleteFromDisplay = () => {
+const deleteFromDisplay = (howMany) => {
+  const toDelete = howMany ? howMany : 1;
   const display = document.querySelector('#display');
   const value = display.value;
-  display.value = value.slice(0, value.length - 1);
+  display.value = value.slice(0, value.length - toDelete);
 };
 
 const calculate = () => {
   const display = document.querySelector('#display');
   let value = display.value.replace('x', '*');
-  value = value.replace(',', '')
+  value = value.replace(',', '');
 
   const regex = /[\d-+/*.]/;
 
@@ -79,13 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   display.addEventListener('input', (evt) => {
-    const regex = /[\d-+/x.]/;
-    if (!regex.test(evt.data)) deleteFromDisplay();
+    if (!evt.data) return;
+    const regex = /^[\d-+/x.]*$/;
+    if (!regex.test(evt.data)) deleteFromDisplay(evt.data.length);
   });
 
   display.addEventListener('keypress', (evt) => {
     if (evt.keyCode === 13) {
       calculate();
     }
-  })
+  });
 });
