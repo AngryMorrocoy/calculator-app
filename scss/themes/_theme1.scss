@@ -48,10 +48,10 @@ body.theme1 {
   }
 
   .theme-selector__buttons {
-    background-color: $toggle-bg !important;
+    background-color: $toggle-bg;
 
     input:checked + .checkmark {
-      background-color: $secondary-key-bg !important;
+      background-color: $secondary-key-bg;
     }
   }
 }

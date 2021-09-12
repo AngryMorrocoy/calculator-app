@@ -39,10 +39,10 @@ body.theme1 #equals {
   color: white;
 }
 body.theme1 .theme-selector__buttons {
-  background-color: #232c43 !important;
+  background-color: #232c43;
 }
 body.theme1 .theme-selector__buttons input:checked + .checkmark {
-  background-color: #d03f2f !important;
+  background-color: #d03f2f;
 }
 
 body.theme2 {
@@ -73,10 +73,10 @@ body.theme2 #equals {
   color: white;
 }
 body.theme2 .theme-selector__buttons {
-  background-color: #d1cccc !important;
+  background-color: #d1cccc;
 }
 body.theme2 .theme-selector__buttons input:checked + .checkmark {
-  background-color: #ca5502 !important;
+  background-color: #ca5502;
 }
 
 body.theme3 {
@@ -107,10 +107,10 @@ body.theme3 #equals {
   color: #1b2428;
 }
 body.theme3 .theme-selector__buttons {
-  background-color: #1d0934 !important;
+  background-color: #1d0934;
 }
 body.theme3 .theme-selector__buttons input:checked + .checkmark {
-  background-color: #00e0d1 !important;
+  background-color: #00e0d1;
 }
 
 .buttons {
