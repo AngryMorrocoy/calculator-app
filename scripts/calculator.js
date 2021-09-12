@@ -44,8 +44,8 @@ const deleteFromDisplay = (howMany) => {
 
 const calculate = () => {
   const display = document.querySelector('#display');
-  let value = display.value.replace('x', '*');
-  value = value.replace(',', '');
+  let value = display.value.replaceAll(',', '');
+  value = value.replaceAll('x', '*');
 
   const regex = /[\d-+/*.]/;
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   display.addEventListener('input', (evt) => {
     if (!evt.data) return;
-    const regex = /^[\d-+/x.]*$/;
+    const regex = /^[\d-+/x.,]+$/;
     if (!regex.test(evt.data)) deleteFromDisplay(evt.data.length);
   });
 
