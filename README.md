@@ -43,8 +43,6 @@ Users should be able to:
 - Vanilla javascript
 - Sass, using flexbox and grid
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 I used this little project to learn the basics of sass (absolutely loved it), also learned a little
 trick for styling of radio buttons that I applied to the theme selector.
